@@ -46,6 +46,7 @@ SOONG_CONFIG_derpGlobalVars += \
     target_trust_usb_control_path \
     target_trust_usb_control_enable \
     target_trust_usb_control_disable \
+    include_miui_camera
 
 SOONG_CONFIG_NAMESPACES += derpNvidiaVars
 SOONG_CONFIG_derpNvidiaVars += \
@@ -73,6 +74,7 @@ SOONG_CONFIG_derpNvidiaVars_uses_nvidia_enhancements := $(NV_ANDROID_FRAMEWORK_E
 SOONG_CONFIG_derpQcomVars_qti_vibrator_use_effect_stream := $(TARGET_QTI_VIBRATOR_USE_EFFECT_STREAM)
 SOONG_CONFIG_derpQcomVars_supports_extended_compress_format := $(AUDIO_FEATURE_ENABLED_EXTENDED_COMPRESS_FORMAT)
 SOONG_CONFIG_derpQcomVars_uses_pre_uplink_features_netmgrd := $(TARGET_USES_PRE_UPLINK_FEATURES_NETMGRD)
+SOONG_CONFIG_derpGlobalVars_include_miui_camera := $(TARGET_INCLUDES_MIUI_CAMERA)
 
 # Set default values
 TARGET_ADDITIONAL_GRALLOC_10_USAGE_BITS ?= 0
